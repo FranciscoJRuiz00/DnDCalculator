@@ -234,6 +234,7 @@ public class login extends javax.swing.JFrame {
             mod.setPassword(nuevoPass);
             
             if(modSql.login(mod)){
+                new Personaje().setVisible(true);
                 this.dispose();
             } else{
                 JOptionPane.showMessageDialog(null,"Datos Incorrectos");
