@@ -13,14 +13,7 @@ import javax.swing.JPasswordField;
  */
 public class hash {
         /* Retorna un hash a partir de un tipo y un texto */
-    public static String getHash(String txt, String hashType) implements KeySelector<tuple3<integer, long,="" string="">, Tuple2<integer, long="">> {{
-        private static final long serialVersionUID = 1L;
-
-    @Override
-    public Tuple2<integer, long=""> getKey(Tuple3<integer, long,="" string=""> t) {
-      return new Tuple2<>(t.f0, t.f1);
-    }
-  }</integer,></integer,></integer,></tuple3<integer,>
+    public static String getHash(String txt, String hashType) {{
             try {
             java.security.MessageDigest md = java.security.MessageDigest.getInstance(hashType);
             byte[] array = md.digest(txt.getBytes());
